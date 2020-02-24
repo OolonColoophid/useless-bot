@@ -3,6 +3,10 @@ function answerQuery(query) {
   if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
     return "I do not care too much about weather, I'm locked inside a data center.";
   return "Sorry Dave, I cannot do that."
+
+  if (query.indexOf("football") != -1 || query.indexOf("score") != -1 || query.indexOf("goal") != -1)
+    return "I don't really know much about football Dave. I'd recommend you open google instead to make a search";
+  return "Sorry Dave, I cannot do that."
 }
 
 
